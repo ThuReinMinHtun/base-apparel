@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grayish-red: hsl(0, 6%, 24%);
+    --gradient: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    --red: linear-gradient(135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%));
+}
+
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.bg-gradient-1 {
+    background: var(--gradient);
+}
+
+.bg-gradient-2 {
+    background: var(--red);
+}
+
+h1{
+    letter-spacing: 0.7rem;
+}
+.text-color{
+    color: var(--desaturated-red);
+    
+}
+
+.text-color-1{
+    color: var(--dark-grayish-red);
+}
+
+
+.back-image{
+    background-image: url('/images/bg-pattern-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
