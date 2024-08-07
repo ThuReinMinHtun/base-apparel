@@ -21,22 +21,36 @@
   <body
     class="bg-gradient-1 flex justify-center items-center min-h-screen flex-col"
   >
-    <section class="container mx-auto flex flex-col md:flex-row items-center min-h-screen w-full">
+    <section
+      class="container mx-auto flex flex-col md:flex-row items-center min-h-screen w-full"
+    >
+      
       <div
-        class="min-h-screen md:w-1/2 relative flex flex-col items-center justify-center md:items-start  z-10 back-image"
+        class="min-h-screen w-full md:w-1/2 relative flex flex-col items-center justify-center md:items-start z-10 back-image"
       >
-        <img src="./images/logo.svg" alt="logo" class=" absolute top-[80px] left-[100px]" />
-        <div class="p-12 mx-12 leading-5">
+        <div class="p-8 md:p-0 mb-10 md:mb-0">
+          <img
+            src="./images/logo.svg"
+            alt="logo"
+            class="absolute top-10 md:top-18 left-10 md:left-20"
+          />
+        </div>
+        <div class="w-full h-full  md:hidden">
+          <img class="w-full h-full object-cover object-center" src="./images/hero-mobile.jpg" alt="coming soon photo">
+        </div>
+        <div class="flex flex-col justify-center items-center md:items-start text-center md:text-left p-8 md:p-12 w-full leading-5 mt-5">
           <h1 class="text-5xl md:text-6xl font-light text-color uppercase mb-2">
             We're
           </h1>
-          <h1 class="text-5xl md:text-6xl font-semibold text-color-1 uppercase mb-2">
-            coming soon
+          <h1
+            class="text-5xl md:text-6xl font-semibold text-color-1 uppercase mb-2 "
+          >
+            coming <br> soon
           </h1>
-          <p class="text-color text-sm leading-6 mt-5">
-            Hello fellow shoppers! We're currently building our new fashion store.
-            Add your email below to stay up-to-date with announcements and our
-            launch deals.
+          <p class="text-color text-sm leading-6 mt-5 w-[70%] md:w-full">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
           </p>
         </div>
       </div>
