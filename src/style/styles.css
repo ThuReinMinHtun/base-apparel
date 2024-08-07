@@ -28,11 +28,23 @@ h1{
     color: var(--desaturated-red);
     
 }
+.button-bg{
+    background:var(--red);
+    border-radius: 20px;
 
+}
 .text-color-1{
     color: var(--dark-grayish-red);
 }
-
+input::placeholder{
+    color: var(--desaturated-red);
+}
+.border-color{
+    border: 1px solid var(--desaturated-red);
+    color: var(--desaturated-red);
+    border-radius: 25px;
+    background: var(--gradient);
+}
 
 .back-image{
     background-image: url('/images/bg-pattern-desktop.svg');
