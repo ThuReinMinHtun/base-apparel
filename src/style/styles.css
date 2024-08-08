@@ -5,7 +5,8 @@
     --soft-red: hsl(0, 93%, 68%);
     --dark-grayish-red: hsl(0, 6%, 24%);
     --gradient: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-    --red: linear-gradient(135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%));
+    --red: linear-gradient(135deg, from #f8bfbf, to #ee8c8c);
+    --button:#F4A9A9;
 }
 
 
@@ -28,11 +29,7 @@ h1{
     color: var(--desaturated-red);
     
 }
-.button-bg{
-    background:var(--red);
-    border-radius: 20px;
 
-}
 .text-color-1{
     color: var(--dark-grayish-red);
 }

@@ -19,14 +19,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body
-    class="bg-gradient-1 flex justify-center items-center min-h-screen flex-col"
+    class="bg-gradient-1 flex justify-center items-center min-h-screen w-full flex-col"
   >
     <section
-      class="container mx-auto flex flex-col md:flex-row items-center min-h-screen w-full"
+      class="container mx-auto flex flex-col md:flex-row items-center w-full"
     >
-      
       <div
-        class="min-h-screen w-full md:w-1/2 relative flex flex-col items-center justify-center md:items-start z-10 back-image"
+        class="h-screen w-full md:w-3/5 relative flex  flex-col items-center justify-center md:items-start z-1 back-image"
       >
         <div class="p-8 md:p-0 mb-10 md:mb-0">
           <img
@@ -35,31 +34,56 @@
             class="absolute top-10 md:top-18 left-10 md:left-20"
           />
         </div>
-        <div class="w-full h-full  md:hidden">
-          <img class="w-full h-full object-cover object-center" src="./images/hero-mobile.jpg" alt="coming soon photo">
+        <div class="w-full h-full md:hidden">
+          <img
+            class="w-full h-full object-cover object-center"
+            src="./images/hero-mobile.jpg"
+            alt="coming soon photo"
+          />
         </div>
-        <div class="flex flex-col justify-center items-center md:items-start text-center md:text-left p-8 md:p-12 w-full leading-5 mt-5">
+        <div
+          class="flex flex-col justify-center items-center md:items-start text-center md:text-left p-8 md:p-12 w-full leading-5 mt-5"
+        >
           <h1 class="text-5xl md:text-6xl font-light text-color uppercase mb-2">
             We're
           </h1>
           <h1
-            class="text-5xl md:text-6xl font-semibold text-color-1 uppercase mb-2 "
+            class="text-5xl md:text-6xl font-semibold text-color-1 uppercase mb-2"
           >
-            coming <br> soon
+            coming <br />
+            soon
           </h1>
           <p class="text-color text-sm leading-6 mt-5 w-[70%] md:w-full">
             Hello fellow shoppers! We're currently building our new fashion
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
           </p>
-          <form action="#" class="mt-8 relative flex items-center w-full max-w-md ">
-            <input type="email" placeholder="Email Address" class="flex-1 p-4  border-color focus:outline-none ">
-            <button type="submit" class="button-bg text-white p-4 rounded-r-md  focus:outline-none">
-              <img src="./images/icon-arrow.svg" alt="">
-              
+          <form
+            action="#"
+            class="mt-8 relative flex items-center w-full max-w-md relative"
+          >
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="flex-1 p-4 border-color focus:outline-none"
+            />
+            <button
+              type="submit"
+              class="w-[85px] bg-gradient-to-r from-[#f8bfbf] via-[#F4A9A9] to-[#ee8c8c] text-white p-4 rounded-[2rem] shadow-lg shadow-[#F4A9A9] focus:outline-none absolute right-0 flex items-center justify-center"
+            >
+              <img
+                src="./images/icon-arrow.svg"
+                alt="icon-arrow"
+                class="w-[20px] h-[20px] object-contain"
+              />
             </button>
           </form>
         </div>
+      </div>
+      <div
+        class="w-2/5 h-screen md:block hidden flex  md:items-end justify-center"
+      >
+        <img src="./images/hero-desktop.jpg" alt="coming soon" class="w-full h-full object-cover object-center" />
       </div>
     </section>
 
