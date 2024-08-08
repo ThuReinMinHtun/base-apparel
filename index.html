@@ -25,7 +25,7 @@
       class="container mx-auto flex flex-col md:flex-row items-center w-full"
     >
       <div
-        class="h-screen w-full md:w-3/5 relative flex  flex-col items-center justify-center md:items-start z-1 back-image"
+        class="min-h-screen w-full md:w-3/5 relative flex flex-col items-center justify-center md:items-start z-1 back-image"
       >
         <div class="p-8 md:p-0 mb-10 md:mb-0">
           <img
@@ -59,10 +59,12 @@
             and our launch deals.
           </p>
           <form
+          id="form"
             action="#"
             class="mt-8 relative flex items-center w-full max-w-md relative"
           >
             <input
+            id="email-input"
               type="email"
               placeholder="Email Address"
               class="flex-1 p-4 border-color focus:outline-none"
@@ -77,23 +79,37 @@
                 class="w-[20px] h-[20px] object-contain"
               />
             </button>
+            <div id="error-icon" class="w-[20px] h-[20px] absolute right-[90px] hidden">
+              <img
+                src="./images/icon-error.svg"
+                alt="icon-error"
+                class="w-[20px] h-[20px] object-contain"
+              />
+            </div>
+            <p id="error-text" class="text-red-500 text-sm absolute left-[10px] top-16 hidden ">Please provide a valid email address</p>
           </form>
         </div>
       </div>
       <div
-        class="w-2/5 h-screen md:block hidden flex  md:items-end justify-center"
+        class="w-2/5 h-screen md:block hidden flex md:items-end justify-center"
       >
-        <img src="./images/hero-desktop.jpg" alt="coming soon" class="w-full h-full object-cover object-center" />
+        <img
+          src="./images/hero-desktop.jpg"
+          alt="coming soon"
+          class="w-full h-full object-cover object-center"
+        />
       </div>
     </section>
 
     <footer>
-      <p class="attribution">
+      <p class="attribution text-red-500 text-sm mt-5">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Thu Rein</a>.
       </p>
     </footer>
+
+    <script src="./src/js/main.js"></script>
   </body>
 </html>
